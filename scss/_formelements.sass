@@ -1,0 +1,40 @@
+@use 'vars'
+.form-group
+    display: flex
+    flex-direction: column-reverse
+    margin-bottom: 15px
+
+    label 
+        transition: all 0.3s ease
+        display: inline-block
+        margin-bottom: 5px
+
+    input, textarea
+        background-color: vars.$input-background
+        color: vars.$input-font-color
+        font-size: vars.$input-font-size
+        font-family: vars.$body-font
+        border-style: none
+        border-bottom-style: groove
+        outline: none
+        padding-left: vars.$spacing
+        padding-right: vars.$spacing
+        transition: all 0.3s ease
+        display: inline-block
+        margin-bottom: 5px
+
+        &:focus
+            border-bottom-color: vars.$link-color-active
+
+            &+label
+                color: vars.$link-color-active
+
+button
+    font-size: 1.2em
+    width: auto
+    border: none
+    padding: vars.$spacing
+    background-color: vars.$link-color  
+    transition: all 0.3s ease
+    &:hover
+        background-color: vars.$link-color-active

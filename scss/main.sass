@@ -1,0 +1,49 @@
+@use 'vars'
+@use 'formelements'
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap')
+
+body,nav
+    all: unset
+
+body
+    background-color: vars.$body-background
+    font-family: vars.$body-font
+    color: vars.$body-font-color
+    font-size: vars.$body-font-size
+
+a
+    color: vars.$link-color
+    text-decoration: none
+    transition: all 0.3s ease
+
+a:hover
+    color: vars.$link-color-active
+    text-decoration: underline
+
+.header
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding: 0 vars.$spacing*2  0 vars.$spacing*2
+    box-shadow: vars.$shadow
+    .title
+        color: vars.$link-color-active
+.container
+    margin: auto
+    width: 90%
+    max-width: vars.$container-max-width
+    .section
+        box-shadow: vars.$shadow
+        padding: vars.$spacing*2
+        margin-top: vars.$spacing*2
+.align-right
+    text-align: right
+.pblock
+    padding-left: vars.$spacing*10
+h4
+    //
+h4::before
+    content: "// "
+h4::after
+    content: ""

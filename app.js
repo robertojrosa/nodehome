@@ -9,11 +9,11 @@ var indexRouter = require("./routes/index");
 
 var app = express();
 mongoose.connect(
-  "mongodb+srv://nodehome:mandarinabonita@home-ne7lo.mongodb.net/sample_analytics?retryWrites=true&w=majority",
+  "mmongodb://nodehome:mandarinabonita@home-shard-00-00-ne7lo.mongodb.net:27017,home-shard-00-01-ne7lo.mongodb.net:27017,home-shard-00-02-ne7lo.mongodb.net:27017/debts?ssl=true&replicaSet=home-shard-0&authSource=admin&retryWrites=true&w=majorityongodb+srv://nodehome:mandarinabonita@home-ne7lo.mongodb.net/debts?retryWrites=true&w=majority",
   { useNewUrlParser: true }
 );
 var db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error:"));
+db.on("error", console.error.bind(console, "aqui ta el pedo:"));
 db.once("open", () => {
   console.log("entro");
 });

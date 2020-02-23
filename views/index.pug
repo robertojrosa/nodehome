@@ -2,16 +2,23 @@
 extends layout
 
 block content
-  nav
-    div.container
-      h4 welcome
-      div.row   
-        div.col.s12
-          ul.tabs
-            a.li.tab.col.s3(href='/') that test
-            a.li.tab.col.s3(href='/') another test
+  div.container
+    div.section
+      h4 welcome to your debts
+      p.pblock  this is a simple node express vanilla sass and javascript app.
+      .align-right
+        a(href="/") git
 
-    script.
-      var instance = M.Tabs.init(el, options);
+    .section
+      h4 login
+      form
+        .form-group
+          input(type="email", name="myinput", placeholder="your email here dude. it won't be confirmed")
+          label(for="myinput") this label
+        .align-right
+          button this button
+
+
+
 
 

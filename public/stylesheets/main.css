@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap");
+.form-group {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 15px;
+}
+.form-group label {
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: "Cutive Mono", Courrier New;
+  border-style: none;
+  border-bottom-style: groove;
+  outline: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-group input:focus, .form-group textarea:focus {
+  border-bottom-color: #f05454;
+}
+.form-group input:focus + label, .form-group textarea:focus + label {
+  color: #f05454;
+}
+
+button {
+  font-size: 1.2em;
+  width: auto;
+  border: none;
+  padding: 5px;
+  background-color: #f0b0b0;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #f05454;
+}
+
+body, nav {
+  all: unset;
+}
+
+body {
+  background-color: #222222;
+  font-family: "Cutive Mono", Courrier New;
+  color: #f0f0f0;
+  font-size: 1.2em;
+}
+
+a {
+  color: #f0b0b0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #f05454;
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  box-shadow: 3px 3px 5px #646464;
+}
+.header .title {
+  color: #f05454;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 740px;
+}
+.container .section {
+  box-shadow: 3px 3px 5px #646464;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.pblock {
+  padding-left: 50px;
+}
+
+h4::before {
+  content: "// ";
+}
+
+h4::after {
+  content: "";
+}
+
+/*# sourceMappingURL=main.css.map */

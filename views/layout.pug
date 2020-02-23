@@ -1,13 +1,9 @@
-doctype html
+doctype html5
 html
   head
-    title= title
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', type='text/css',  href='/stylesheets/main.css')
+    title missing
   body
-    header.mui-appbar.mui--z1
-      div.mui-appbar
-        table
-          tr(class="vertical-align:middle")
-            td.mui--appbar-height left
+    include header.pug
     block content
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
